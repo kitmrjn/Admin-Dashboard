@@ -194,9 +194,11 @@ label {
     grid-row: 1/ span 2;
 }
 
-.projects > p {
+.projects > p,
+.announcements > p {
     font-size: 1.4em;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .cards-container {
@@ -223,6 +225,7 @@ label {
 
 .card > .description {
     grid-column: 1 / span 3;
+    font-size: 0.9em;
 }
 
 .card > .clickables {
@@ -234,3 +237,32 @@ label {
     margin-top: 10px;
 }
 
+/* End of Projects */
+
+/* Start of Announcements */
+
+.announcement-container {
+    background-color: #fff;
+    padding: 20px 30px 20px 30px;
+    display: grid;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+.announcement-container > div > p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.announcement-container > div:first-child {
+    border-bottom: 1px solid rgb(235, 230, 230);
+}
+
+.announcement-container > div > .description {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+.description {
+    color: gray;
+}
